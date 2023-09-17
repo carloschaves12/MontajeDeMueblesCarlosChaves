@@ -1,0 +1,322 @@
+---
+// Importa el componente Image y la imagen
+import { Image } from "astro:assets";
+import imagen1slider from "../../public/images/slider1Desktop.webp";
+import imagen2slider from "../../public/images/slider2Desktop.webp";
+import imagen3slider from "../../public/images/slider3Desktop.webp";
+// import mail from "../../public/images/mail2.png";
+---
+
+<!doctype html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Ofrecemos servicios de montaje de muebles, tapicería y mobiliario de descanso profesionales y de alta calidad para hogares y negocios ademas de posdicionamiento de mercancía. Contáctanos para obtener el mejor servicio de montaje en Córdoba, Sevilla y Huelva."/>
+    <script src="https://kit.fontawesome.com/af12a3c80b.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+    <title>Montaje de Muebles Carlos Chaves S.L.</title>
+  </head>
+  <body>
+    <nav class="border-gray-200 bg-gray-900">
+      <div class="max-w-screen-xl flex flex-wrap items-center justify-between mx-auto p-4">
+        <div class="flex items-center">
+          <!-- <img src="public/Images/logo2.jpg" class="h-8 mr-3" alt="Flowbite Logo" /> -->
+          <!-- <Image src={logo} class="h-8 mr-3" alt="logo"/> -->
+          <span  class="self-center text-2xl font-semibold whitespace-normal dark:text-white" style="display: flex; flex-wrap: wrap;" >Montaje de Muebles Carlos Chaves</span>
+        </div>
+        <button
+          data-collapse-toggle="navbar-default" type="button" class="inline-flex items-center p-2 ml-3 text-sm rounded-lg md:hidden focus:outline-none focus:ring-2 text-gray-400 hover:bg-gray-700 focus:ring-gray-600" aria-controls="navbar-default" aria-expanded="false">
+          <span class="sr-only">Open main menu</span>
+          <svg  class="w-6 h-6" aria-hidden="true" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+            <path fill-rule="evenodd" d="M3 5a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 10a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1zM3 15a1 1 0 011-1h12a1 1 0 110 2H4a1 1 0 01-1-1z" clip-rule="evenodd"></path></svg>
+        </button>
+        <div class="hidden w-full md:block md:w-auto" id="navbar-default">
+          <ul class="font-medium flex flex-col p-4 md:p-0 mt-4 border rounded-lg md:flex-row md:space-x-8 md:mt-0 md:border-0 bg-gray-800 md:bg-gray-900 border-gray-700">
+            <li>
+              <a  href="#about" class="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Nosotros</a>
+            </li>
+            <li>
+              <a href="#cards" class="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Servicios</a>
+            </li>
+            <li>
+              <a href="#contact" class="block py-2 pl-3 pr-4 rounded md:border-0 md:p-0 text-white md:hover:text-blue-500 hover:bg-gray-700 hover:text-white md:hover:bg-transparent">Contacto</a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <main>
+      <section class="bg-center bg-no-repeat bg-[url('/images/slider1Desktop.webp')] bg-gray-700 bg-blend-multiply">
+        <div class="px-4 mx-auto max-w-screen-xl text-center py-24 lg:py-56">
+          <h1 class="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white md:text-5xl lg:text-6xl"> Da vida a tus espacios </h1>
+          <p class="mb-8 text-lg font-normal text-gray-300 lg:text-xl sm:px-16 lg:px-48">
+            Empresa dedicada a la distribución y montajes de muebles de todo
+            tipo a cliente final, domicilio, actualmente en Córdoba, Sevilla y
+            Huelva. Tambien nos dedicamos a la logistica integral del mueble
+            tanto a particulares como a empresas. Ademas de entregas de
+            tapicería a domicilio de tiendas especializadas.
+          </p>
+          <div class="flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+            <a href="#contact" class="inline-flex justify-center items-center py-3 px-5 text-base font-medium text-center text-white rounded-lg bg-blue-700 hover:bg-blue-800 focus:ring-4 focus:ring-blue-900">
+              Contactanos
+              <svg aria-hidden="true" class="ml-2 -mr-1 w-4 h-4" fill="currentColor" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg">
+                <path fill-rule="evenodd"  d="M10.293 3.293a1 1 0 011.414 0l6 6a1 1 0 010 1.414l-6 6a1 1 0 01-1.414-1.414L14.586 11H3a1 1 0 110-2h11.586l-4.293-4.293a1 1 0 010-1.414z" clip-rule="evenodd"></path>
+              </svg>
+            </a>
+          </div>
+        </div>
+      </section>
+      <section>
+        <div id="default-carousel" class="bg-gray-900 border-gray-200 relative w-full" data-carousel="slide">
+          <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <Image class="centered-image" src={imagen1slider} alt="imagen1slider"/>
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <Image class="centered-image" src={imagen2slider} alt="imagen2slider"/>
+            </div>
+            <div class="hidden duration-700 ease-in-out" data-carousel-item>
+              <Image class="centered-image" src={imagen3slider} alt="imagen3slider"/>
+            </div>
+          </div>
+          <div class="absolute z-30 flex space-x-3 -translate-x-1/2 bottom-5 left-1/2">
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="true" aria-label="Slide 1" data-carousel-slide-to="0"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 2" data-carousel-slide-to="1"></button>
+            <button type="button" class="w-3 h-3 rounded-full" aria-current="false" aria-label="Slide 3" data-carousel-slide-to="2"></button>
+          </div>
+          <button type="button" class="absolute top-0 left-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg aria-hidden="true" class="w-5 h-5 sm:w-6 sm:h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 19l-7-7 7-7"></path>
+              </svg>
+              <span class="sr-only">Previous</span>
+            </span>
+          </button>
+          <button type="button" class="absolute top-0 right-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+            <span class="inline-flex items-center justify-center w-8 h-8 rounded-full sm:w-10 sm:h-10 bg-gray-800/30 group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-gray-800/70 group-focus:outline-none">
+              <svg aria-hidden="true" class="w-5 h-5 sm:w-6 sm:h-6 text-gray-800" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"></path>
+              </svg>
+              <span class="sr-only">Next</span>
+            </span>
+          </button>
+        </div>
+      </section>
+      <section>
+        <div id="cards" class="bg-gray-900 border-gray-200 grid grid-cols-1 md:grid-cols-3 gap-4">
+          <div class="grid gap-4">
+            <div class="max-w-sm p-6 border rounded-lg shadow bg-gray-800 border-gray-700">
+              <span class="material-symbols-outlined w-10 h-10 mb-2 text-gray-400">
+                dresser
+              </span>
+              <a href="#">
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">
+                  Reparto y montaje de muebles
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-400">
+                Nuestro servicio de reparto y montaje de muebles garantiza una
+                entrega segura y profesional de los productos adquiridos por
+                nuestros clientes. Además, nuestro equipo especializado se
+                encarga de montar los muebles en el lugar designado, asegurando
+                que estén correctamente ensamblados y listos para su uso.
+              </p>
+            </div>
+            <div class="max-w-sm p-6 border rounded-lg shadow bg-gray-800 border-gray-700">
+              <span class="material-symbols-outlined w-10 h-10 mb-2 text-gray-400">
+                warehouse
+              </span>
+              <a href="#">
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">
+                  Posicionamiento de mercancía
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-400">
+                Ofrecemos un servicio de almacenamiento seguro y estratégico
+                para los productos de nuestros clientes, preparándolos para su
+                posterior reparto. Contamos con amplias instalaciones que
+                permiten organizar la mercancía de manera eficiente, asegurando
+                un acceso fácil y rápido cuando sea necesario.
+              </p>
+            </div>
+          </div>
+          <div class="grid gap-4">
+            <div class="max-w-sm p-6 border rounded-lg shadow bg-gray-800 border-gray-700">
+              <span class="material-symbols-outlined w-10 h-10 mb-2 text-gray-400">
+                chair
+              </span>
+              <a href="#">
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">
+                  Reparto y montaje de tapicería
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-400">
+                Proporcionamos un servicio completo de reparto y montaje de
+                tapicería para los muebles de nuestros clientes. Nos encargamos
+                de entregar los tejidos y materiales seleccionados, brindando un
+                acabado impecable.
+              </p>
+            </div>
+          </div>
+          <div class="grid gap-4">
+            <div class="max-w-sm p-6 border rounded-lg shadow bg-gray-800 border-gray-700">
+              <span class="material-symbols-outlined w-10 h-10 mb-2 text-gray-400">
+                king_bed
+              </span>
+              <a href="#">
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">
+                  Reparto y montaje de mobiliario de descanso
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-400">
+                Ofrecemos un servicio especializado en el reparto y montaje de
+                mobiliario de descanso, como camas, canapés y colchones. Nuestro
+                equipo se encarga de entregar y ensamblar estos productos,
+                asegurando la comodidad y el descanso óptimo de nuestros
+                clientes.
+              </p>
+            </div>
+            <div class="max-w-sm p-6 border rounded-lg shadow bg-gray-800 border-gray-700">
+              <span class="material-symbols-outlined w-10 h-10 mb-2 text-gray-400">
+                delete</span>
+              <a href="#">
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-white">
+                  Recogida de usados
+                </h5>
+              </a>
+              <p class="mb-3 font-normal text-gray-400">
+                Nos ocupamos de la recogida de muebles usados, brindando a
+                nuestros clientes una solución práctica y responsable para
+                deshacerse de sus piezas antiguas. Nuestro servicio de recogida
+                asegura una disposición adecuada de los muebles, a través de
+                reciclaje o eliminación adecuada.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id="contact" class="bg-gray-900 border-gray-200 flex flex-col space-y-4 sm:flex-row sm:justify-center sm:space-y-0 sm:space-x-4">
+        <div
+          class="w-full max-w-md p-4 border rounded-lg shadow sm:p-8 bg-gray-800 border-gray-700"
+        >
+          <div class="flex items-center justify-center mb-4">
+            <h5 class="text-xl font-bold leading-none text-white">Contacto</h5>
+          </div>
+          <div class="flow-root">
+            <ul role="list" class="divide-y divide-gray-700">
+              <li class="py-3 sm:py-4">
+                <div class="flex items-center space-x-4">
+                  <div class="flex-shrink-0">
+                    <i class="fa-solid fa-envelope text-gray-400"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <p class="text-sm font-medium truncate text-white">
+                      <Image src="/images/mail.png" alt="mail" width="250" height="20"/>
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="py-3 sm:py-4">
+                <div class="flex items-center space-x-4">
+                  <div class="flex-shrink-0">
+                    <i class="fa-solid fa-phone text-gray-400"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <p class="text-sm font-medium truncate text-white">
+                      620746627
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="py-3 sm:py-4">
+                <div class="flex items-center space-x-4">
+                  <div class="flex-shrink-0">
+                    <i class="fa-brands fa-linkedin text-gray-400"></i>
+                  </div>
+                  <div class="flex-1 min-w-0">
+                    <p class="text-sm font-medium truncate text-white">
+                      <a
+                        href="https://www.linkedin.com/in/carlos-ch%C3%A1vez-repullo-a9885566/"
+                      >
+                        Carlos Chaves Repullo
+                      </a>
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+    </main>
+    <footer class="shadow bg-gray-900">
+      <div class="w-full max-w-screen-xl mx-auto p-4 md:py-8">
+        <div class="sm:flex sm:items-center sm:justify-center">
+          <a
+            href="https://flowbite.com/"
+            class="flex items-center mb-4 sm:mb-0"
+          >
+            <span
+              class="self-center text-2xl font-semibold whitespace-nowrap dark:text-white"
+              >Montaje de Muebles Carlos Chaves</span
+            >
+          </a>
+        </div>
+        <hr class="my-6 sm:mx-auto border-gray-700 lg:my-8" />
+        <span class="block text-sm sm:text-center text-gray-400"
+          >© 2023 <a href="https://flowbite.com/" class="hover:underline"
+            >Montaje de Muebles Carlos Chaves S.L.</a
+          > All Rights Reserved.</span
+        >
+      </div>
+    </footer>
+    <script
+      is:inline
+      src="https://cdnjs.cloudflare.com/ajax/libs/flowbite/1.8.0/flowbite.min.js"
+    ></script>
+  </body>
+</html>
+
+<style>
+  @import "tailwindcss/base";
+  @import "tailwindcss/components";
+  @import "tailwindcss/utilities";
+
+  body {
+    color: #fff;
+  }
+
+  #about {
+    height: 95vh;
+  }
+
+  .centered-image {
+    object-fit: cover;
+    object-position: center center;
+    width: 100%;
+    height: 100%;
+  }
+
+  #default-carousel,
+  #cards,
+  #contact,
+  footer {
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
+
+  #cards > div {
+    justify-content: center;
+  }
+
+  #cards > div > div > span {
+    font-size: 2.5rem;
+  }
+
+  @media (max-width: 464px) {
+    body > nav > div > div.flex.items-center > span {
+      width: 250px;
+    }
+  }
+</style>
