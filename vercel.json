@@ -1,0 +1,12 @@
+{
+    "functions": {
+      "api/**/*.js": {
+        "runtime": "node@14"
+      }
+    },
+    "version": 2,
+    "env": {
+      "VERCEL_CERT": "1"
+    }
+  }
+  
