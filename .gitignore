@@ -23,3 +23,5 @@ pnpm-debug.log*
 .vercel
 
 src/pages/login.astro
+
+vercel.json
